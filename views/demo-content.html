@@ -1,0 +1,788 @@
+<!-- Demo Container -->
+<div class="space-y-8">
+    <!-- Demo Introduction -->
+    <div class="bg-white rounded-xl shadow-md p-6">
+        <div class="border-l-4 brand-border pl-4 mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Demo Modulo HR Timbrature & Cantieri</h2>
+            <p class="text-gray-600">
+                Questa demo mostra le interfacce principali del modulo HR per S.I.E. Engineering, 
+                dal backoffice di gestione fino all'app mobile per tecnici, evidenziando l'integrazione con Webfleet.
+            </p>
+        </div>
+    </div>
+
+    <!-- Mobile App Preview - Timbrature Tecnici -->
+    <div class="bg-gray-800 rounded-xl p-6 shadow-2xl">
+        <h3 class="text-white text-lg font-semibold mb-4">App Mobile Tecnici - Sistema Timbrature</h3>
+        
+        <!-- Mobile Frame -->
+        <div class="flex justify-center">
+            <div class="relative">
+                <!-- Phone Frame -->
+                <div class="bg-gray-900 rounded-[2.5rem] p-2 shadow-2xl">
+                    <div class="bg-black rounded-[2rem] overflow-hidden w-80 h-[640px]">
+                        <!-- Status Bar -->
+                        <div class="bg-black text-white px-6 py-2 flex justify-between text-xs">
+                            <span>9:41</span>
+                            <div class="flex space-x-1">
+                                <span>●●●</span>
+                                <span>📶</span>
+                                <span>🔋</span>
+                            </div>
+                        </div>
+                        
+                        <!-- App Content -->
+                        <div class="bg-gray-50 h-full">
+                            <!-- Header -->
+                            <div class="bg-brand p-4 flex items-center justify-between">
+                                <div>
+                                    <h4 class="font-bold text-gray-900">S.I.E. Engineering</h4>
+                                    <p class="text-sm text-gray-700">Timbrature Cantieri</p>
+                                </div>
+                                <div class="w-10 h-10 bg-gray-900 rounded-full flex items-center justify-center">
+                                    <span class="material-icons-outlined text-white text-sm">person</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Welcome Card -->
+                            <div class="p-4">
+                                <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-200">
+                                    <div class="flex items-center mb-3">
+                                        <span class="material-icons-outlined text-green-500 mr-2">location_on</span>
+                                        <span class="font-medium text-gray-800">Benvenuto, Marco Rossi</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mb-3">Sei pronto per iniziare la giornata lavorativa?</p>
+                                    <div class="text-xs text-gray-500">
+                                        <div class="flex items-center mb-1">
+                                            <span class="material-icons-outlined text-xs mr-1">today</span>
+                                            Oggi: Cantiere Via Roma 45, Milano
+                                        </div>
+                                        <div class="flex items-center">
+                                            <span class="material-icons-outlined text-xs mr-1">local_shipping</span>
+                                            Automezzo: Fiat Ducato - AB123CD
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Action Buttons -->
+                            <div class="px-4 space-y-3">
+                                <!-- Check-in GPS -->
+                                <button class="w-full bg-green-500 text-white p-4 rounded-lg flex items-center justify-between shadow-md">
+                                    <div class="flex items-center">
+                                        <span class="material-icons-outlined mr-3">location_on</span>
+                                        <div class="text-left">
+                                            <div class="font-medium">Check-in GPS</div>
+                                            <div class="text-xs opacity-90">Timbratura nel cantiere</div>
+                                        </div>
+                                    </div>
+                                    <span class="material-icons-outlined">arrow_forward</span>
+                                </button>
+                                
+                                <!-- Check-in QR Code -->
+                                <button class="w-full bg-blue-500 text-white p-4 rounded-lg flex items-center justify-between shadow-md">
+                                    <div class="flex items-center">
+                                        <span class="material-icons-outlined mr-3">qr_code_scanner</span>
+                                        <div class="text-left">
+                                            <div class="font-medium">Scansiona QR Automezzo</div>
+                                            <div class="text-xs opacity-90">Check-in da furgone</div>
+                                        </div>
+                                    </div>
+                                    <span class="material-icons-outlined">arrow_forward</span>
+                                </button>
+                                
+                                <!-- Last Activity -->
+                                <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-200">
+                                    <h5 class="font-medium text-gray-800 mb-2 flex items-center">
+                                        <span class="material-icons-outlined text-gray-500 text-sm mr-2">history</span>
+                                        Ultima attività
+                                    </h5>
+                                    <div class="space-y-2">
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-sm text-gray-600">Check-out ieri</span>
+                                            <span class="text-xs text-gray-500">17:30</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-sm text-gray-600">Cantiere: Via Verdi 12</span>
+                                            <span class="px-2 py-1 bg-green-100 text-green-800 text-xs rounded">Approvata</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Quick Stats -->
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="bg-white rounded-lg p-3 shadow-sm border border-gray-200 text-center">
+                                        <div class="text-2xl font-bold text-gray-800">8.5h</div>
+                                        <div class="text-xs text-gray-500">Ore questa settimana</div>
+                                    </div>
+                                    <div class="bg-white rounded-lg p-3 shadow-sm border border-gray-200 text-center">
+                                        <div class="text-2xl font-bold text-gray-800">3</div>
+                                        <div class="text-xs text-gray-500">Cantieri visitati</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Backoffice HR Dashboard -->
+    <div class="bg-gray-800 rounded-xl p-6 shadow-2xl mt-8">
+        <h3 class="text-white text-lg font-semibold mb-4">Dashboard HR - Gestione Timbrature e Webfleet</h3>
+        
+        <!-- Browser Chrome -->
+        <div class="bg-gray-100 rounded-t-lg flex items-center p-3 space-x-2">
+            <div class="flex space-x-2">
+                <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+            </div>
+            <div class="flex-1 bg-white rounded-full px-4 py-1 text-sm text-gray-600">
+                app.givemehive.com/sie-engineering/hr-timbrature
+            </div>
+        </div>
+
+        <!-- Dashboard Interface -->
+        <div class="bg-gray-50 h-[700px] rounded-b-lg overflow-hidden">
+            <!-- App Header -->
+            <div class="bg-white border-b px-6 py-4 flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <div class="text-2xl font-bold text-gray-800">GiveMeHive</div>
+                    <span class="text-gray-500">|</span>
+                    <span class="text-gray-600">S.I.E. Engineering - Modulo HR</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="flex items-center space-x-2 px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-lg relative">
+                        <span class="material-icons-outlined text-sm">notifications</span>
+                        <div class="w-2 h-2 bg-red-500 rounded-full absolute -top-1 -right-1"></div>
+                    </button>
+                    <button class="flex items-center space-x-2 px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <span class="material-icons-outlined text-sm">person</span>
+                        <span>Laura Bianchi - HR</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="grid grid-cols-12 gap-6 p-6 h-[calc(100%-76px)] overflow-y-auto">
+                <!-- Sidebar -->
+                <div class="col-span-3 bg-white rounded-lg shadow p-4">
+                    <div class="space-y-2">
+                        <div class="flex items-center space-x-2 p-2 hover:bg-gray-50 rounded-lg text-gray-600">
+                            <span class="material-icons-outlined">dashboard</span>
+                            <span>Dashboard</span>
+                        </div>
+                        <div class="flex items-center space-x-2 p-2 bg-brand bg-opacity-10 rounded-lg text-gray-900">
+                            <span class="material-icons-outlined">schedule</span>
+                            <span>Timbrature</span>
+                        </div>
+                        <div class="flex items-center space-x-2 p-2 hover:bg-gray-50 rounded-lg text-gray-600">
+                            <span class="material-icons-outlined">local_shipping</span>
+                            <span>Automezzi</span>
+                        </div>
+                        <div class="flex items-center space-x-2 p-2 hover:bg-gray-50 rounded-lg text-gray-600">
+                            <span class="material-icons-outlined">map</span>
+                            <span>Cantieri</span>
+                        </div>
+                        <div class="flex items-center space-x-2 p-2 hover:bg-gray-50 rounded-lg text-gray-600">
+                            <span class="material-icons-outlined">assessment</span>
+                            <span>Analytics</span>
+                        </div>
+                        <div class="flex items-center space-x-2 p-2 hover:bg-gray-50 rounded-lg text-gray-600">
+                            <span class="material-icons-outlined">sync</span>
+                            <span>Webfleet Sync</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content Area -->
+                <div class="col-span-9 space-y-6">
+                    <!-- Stats Row -->
+                    <div class="grid grid-cols-4 gap-4">
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm text-gray-500">Timbrature Oggi</span>
+                                <span class="material-icons-outlined text-green-500">check_circle</span>
+                            </div>
+                            <div class="text-2xl font-bold text-gray-900">24/28</div>
+                            <div class="text-xs text-gray-500">86% completamento</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm text-gray-500">In Attesa Approvazione</span>
+                                <span class="material-icons-outlined text-yellow-500">pending</span>
+                            </div>
+                            <div class="text-2xl font-bold text-gray-900">7</div>
+                            <div class="text-xs text-gray-500">Da verificare</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm text-gray-500">Automezzi Attivi</span>
+                                <span class="material-icons-outlined text-blue-500">local_shipping</span>
+                            </div>
+                            <div class="text-2xl font-bold text-gray-900">12/15</div>
+                            <div class="text-xs text-gray-500">Sincronizzati Webfleet</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm text-gray-500">Discrepanze</span>
+                                <span class="material-icons-outlined text-red-500">warning</span>
+                            </div>
+                            <div class="text-2xl font-bold text-gray-900">2</div>
+                            <div class="text-xs text-gray-500">Da verificare</div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Activity -->
+                    <div class="bg-white rounded-lg shadow">
+                        <div class="flex justify-between items-center p-4 border-b">
+                            <h3 class="font-semibold text-gray-900">Timbrature Recenti</h3>
+                            <div class="flex space-x-2">
+                                <button class="px-3 py-2 bg-brand text-gray-900 rounded-lg text-sm font-medium hover:opacity-90">
+                                    <span class="material-icons-outlined text-sm mr-1">sync</span>
+                                    Sync Webfleet
+                                </button>
+                                <button class="px-3 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-200">
+                                    <span class="material-icons-outlined text-sm mr-1">filter_list</span>
+                                    Filtri
+                                </button>
+                            </div>
+                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="w-full">
+                                <thead class="bg-gray-50">
+                                    <tr>
+                                        <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Tecnico</th>
+                                        <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Cantiere</th>
+                                        <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Tipo Timbratura</th>
+                                        <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Orario</th>
+                                        <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Webfleet Status</th>
+                                        <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Azioni</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200">
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="px-4 py-3 text-sm">
+                                            <div class="flex items-center">
+                                                <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center mr-3">
+                                                    <span class="text-xs">MR</span>
+                                                </div>
+                                                <div>
+                                                    <div class="font-medium text-gray-900">Marco Rossi</div>
+                                                    <div class="text-gray-500 text-xs">ID: TR001</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="px-4 py-3 text-sm">
+                                            <div>
+                                                <div class="text-gray-900">Via Roma 45, Milano</div>
+                                                <div class="text-gray-500 text-xs">45.4642° N, 9.1900° E</div>
+                                            </div>
+                                        </td>
+                                        <td class="px-4 py-3 text-sm">
+                                            <span class="flex items-center">
+                                                <span class="material-icons-outlined text-green-500 text-sm mr-1">location_on</span>
+                                                Check-in GPS
+                                            </span>
+                                        </td>
+                                        <td class="px-4 py-3 text-sm text-gray-500">08:15</td>
+                                        <td class="px-4 py-3 text-sm">
+                                            <span class="px-2 py-1 bg-green-100 text-green-800 rounded-full text-xs flex items-center">
+                                                <span class="material-icons-outlined text-xs mr-1">check</span>
+                                                Sincronizzato
+                                            </span>
+                                        </td>
+                                        <td class="px-4 py-3 text-sm">
+                                            <button class="text-green-600 hover:text-green-800 mr-2">
+                                                <span class="material-icons-outlined text-sm">check_circle</span>
+                                            </button>
+                                            <button class="text-blue-600 hover:text-blue-800">
+                                                <span class="material-icons-outlined text-sm">visibility</span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="px-4 py-3 text-sm">
+                                            <div class="flex items-center">
+                                                <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center mr-3">
+                                                    <span class="text-xs">AF</span>
+                                                </div>
+                                                <div>
+                                                    <div class="font-medium text-gray-900">Andrea Ferrari</div>
+                                                    <div class="text-gray-500 text-xs">ID: TR002</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="px-4 py-3 text-sm">
+                                            <div>
+                                                <div class="text-gray-900">Via Verdi 12, Bergamo</div>
+                                                <div class="text-gray-500 text-xs">45.6983° N, 9.6773° E</div>
+                                            </div>
+                                        </td>
+                                        <td class="px-4 py-3 text-sm">
+                                            <span class="flex items-center">
+                                                <span class="material-icons-outlined text-blue-500 text-sm mr-1">qr_code</span>
+                                                QR Automezzo
+                                            </span>
+                                        </td>
+                                        <td class="px-4 py-3 text-sm text-gray-500">08:22</td>
+                                        <td class="px-4 py-3 text-sm">
+                                            <span class="px-2 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs flex items-center">
+                                                <span class="material-icons-outlined text-xs mr-1">sync</span>
+                                                In Sync
+                                            </span>
+                                        </td>
+                                        <td class="px-4 py-3 text-sm">
+                                            <button class="text-yellow-600 hover:text-yellow-800 mr-2">
+                                                <span class="material-icons-outlined text-sm">pending</span>
+                                            </button>
+                                            <button class="text-blue-600 hover:text-blue-800">
+                                                <span class="material-icons-outlined text-sm">visibility</span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 bg-red-50">
+                                        <td class="px-4 py-3 text-sm">
+                                            <div class="flex items-center">
+                                                <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center mr-3">
+                                                    <span class="text-xs">LC</span>
+                                                </div>
+                                                <div>
+                                                    <div class="font-medium text-gray-900">Luca Conti</div>
+                                                    <div class="text-gray-500 text-xs">ID: TR003</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="px-4 py-3 text-sm">
+                                            <div>
+                                                <div class="text-gray-900">Via Manzoni 8, Como</div>
+                                                <div class="text-gray-500 text-xs">45.8081° N, 9.0852° E</div>
+                                            </div>
+                                        </td>
+                                        <td class="px-4 py-3 text-sm">
+                                            <span class="flex items-center">
+                                                <span class="material-icons-outlined text-green-500 text-sm mr-1">location_on</span>
+                                                Check-in GPS
+                                            </span>
+                                        </td>
+                                        <td class="px-4 py-3 text-sm text-gray-500">08:45</td>
+                                        <td class="px-4 py-3 text-sm">
+                                            <span class="px-2 py-1 bg-red-100 text-red-800 rounded-full text-xs flex items-center">
+                                                <span class="material-icons-outlined text-xs mr-1">warning</span>
+                                                Discrepanza
+                                            </span>
+                                        </td>
+                                        <td class="px-4 py-3 text-sm">
+                                            <button class="text-red-600 hover:text-red-800 mr-2">
+                                                <span class="material-icons-outlined text-sm">error</span>
+                                            </button>
+                                            <button class="text-blue-600 hover:text-blue-800">
+                                                <span class="material-icons-outlined text-sm">visibility</span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pianificazione Digitale Interface -->
+    <div class="bg-gray-800 rounded-xl p-6 shadow-2xl mt-8">
+        <h3 class="text-white text-lg font-semibold mb-4">Sistema Pianificazione Digitale - Sostituisce Excel</h3>
+        
+        <!-- Browser Chrome -->
+        <div class="bg-gray-100 rounded-t-lg flex items-center p-3 space-x-2">
+            <div class="flex space-x-2">
+                <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+            </div>
+            <div class="flex-1 bg-white rounded-full px-4 py-1 text-sm text-gray-600">
+                app.givemehive.com/sie-engineering/pianificazione
+            </div>
+        </div>
+
+        <!-- Planning Interface -->
+        <div class="bg-gray-50 h-[600px] rounded-b-lg overflow-hidden">
+            <!-- Header -->
+            <div class="bg-white border-b px-6 py-4">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center space-x-4">
+                        <h4 class="text-lg font-semibold text-gray-800">Pianificazione Giornaliera</h4>
+                        <span class="px-3 py-1 bg-brand text-gray-900 rounded-full text-sm font-medium">
+                            Giovedì, 4 Luglio 2025
+                        </span>
+                    </div>
+                    <div class="flex space-x-2">
+                        <button class="px-4 py-2 bg-brand text-gray-900 rounded-lg text-sm font-medium hover:opacity-90">
+                            <span class="material-icons-outlined text-sm mr-1">add</span>
+                            Nuova Pianificazione
+                        </button>
+                        <button class="px-4 py-2 bg-blue-500 text-white rounded-lg text-sm font-medium hover:bg-blue-600">
+                            <span class="material-icons-outlined text-sm mr-1">print</span>
+                            Genera PDF
+                        </button>
+                        <button class="px-4 py-2 bg-green-500 text-white rounded-lg text-sm font-medium hover:bg-green-600">
+                            <span class="material-icons-outlined text-sm mr-1">send</span>
+                            Invia a Tecnici
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Planning Grid -->
+            <div class="p-6">
+                <div class="grid grid-cols-12 gap-4 mb-6">
+                    <!-- Cantieri Column -->
+                    <div class="col-span-4 bg-white rounded-lg p-4 shadow">
+                        <h5 class="font-medium text-gray-800 mb-3 flex items-center">
+                            <span class="material-icons-outlined text-blue-500 mr-2">location_city</span>
+                            Cantieri Attivi
+                        </h5>
+                        <div class="space-y-2">
+                            <div class="p-3 bg-blue-50 rounded-lg border border-blue-200 cursor-pointer hover:bg-blue-100">
+                                <div class="font-medium text-blue-800">Via Roma 45, Milano</div>
+                                <div class="text-sm text-blue-600">Cliente: Iper SpA</div>
+                                <div class="text-xs text-blue-500">Impianto refrigerazione</div>
+                            </div>
+                            <div class="p-3 bg-green-50 rounded-lg border border-green-200 cursor-pointer hover:bg-green-100">
+                                <div class="font-medium text-green-800">Via Verdi 12, Bergamo</div>
+                                <div class="text-sm text-green-600">Cliente: SuperMart</div>
+                                <div class="text-xs text-green-500">Manutenzione sistemi</div>
+                            </div>
+                            <div class="p-3 bg-yellow-50 rounded-lg border border-yellow-200 cursor-pointer hover:bg-yellow-100">
+                                <div class="font-medium text-yellow-800">Via Manzoni 8, Como</div>
+                                <div class="text-sm text-yellow-600">Cliente: RetailMax</div>
+                                <div class="text-xs text-yellow-500">Installazione scaffalature</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Automezzi Column -->
+                    <div class="col-span-4 bg-white rounded-lg p-4 shadow">
+                        <h5 class="font-medium text-gray-800 mb-3 flex items-center">
+                            <span class="material-icons-outlined text-orange-500 mr-2">local_shipping</span>
+                            Automezzi Disponibili
+                        </h5>
+                        <div class="space-y-2">
+                            <div class="p-3 bg-orange-50 rounded-lg border border-orange-200 cursor-pointer hover:bg-orange-100">
+                                <div class="font-medium text-orange-800">Fiat Ducato - AB123CD</div>
+                                <div class="text-sm text-orange-600">Webfleet: Online</div>
+                                <div class="text-xs text-orange-500">Attrezzatura: Completa</div>
+                            </div>
+                            <div class="p-3 bg-purple-50 rounded-lg border border-purple-200 cursor-pointer hover:bg-purple-100">
+                                <div class="font-medium text-purple-800">Iveco Daily - CD456EF</div>
+                                <div class="text-sm text-purple-600">Webfleet: Online</div>
+                                <div class="text-xs text-purple-500">Attrezzatura: Specialistica</div>
+                            </div>
+                            <div class="p-3 bg-gray-50 rounded-lg border border-gray-200 cursor-pointer hover:bg-gray-100">
+                                <div class="font-medium text-gray-800">Ford Transit - GH789IJ</div>
+                                <div class="text-sm text-gray-600">Webfleet: Online</div>
+                                <div class="text-xs text-gray-500">Attrezzatura: Standard</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tecnici Column -->
+                    <div class="col-span-4 bg-white rounded-lg p-4 shadow">
+                        <h5 class="font-medium text-gray-800 mb-3 flex items-center">
+                            <span class="material-icons-outlined text-green-500 mr-2">engineering</span>
+                            Tecnici Disponibili
+                        </h5>
+                        <div class="space-y-2">
+                            <div class="p-3 bg-green-50 rounded-lg border border-green-200 cursor-pointer hover:bg-green-100">
+                                <div class="font-medium text-green-800">Marco Rossi</div>
+                                <div class="text-sm text-green-600">Specializzazione: Refrigerazione</div>
+                                <div class="text-xs text-green-500">Disponibile dalle 08:00</div>
+                            </div>
+                            <div class="p-3 bg-blue-50 rounded-lg border border-blue-200 cursor-pointer hover:bg-blue-100">
+                                <div class="font-medium text-blue-800">Andrea Ferrari</div>
+                                <div class="text-sm text-blue-600">Specializzazione: Elettronica</div>
+                                <div class="text-xs text-blue-500">Disponibile dalle 08:30</div>
+                            </div>
+                            <div class="p-3 bg-purple-50 rounded-lg border border-purple-200 cursor-pointer hover:bg-purple-100">
+                                <div class="font-medium text-purple-800">Luca Conti</div>
+                                <div class="text-sm text-purple-600">Specializzazione: Meccanica</div>
+                                <div class="text-xs text-purple-500">Disponibile dalle 09:00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Current Assignments -->
+                <div class="bg-white rounded-lg shadow">
+                    <div class="p-4 border-b">
+                        <h5 class="font-medium text-gray-800">Assegnazioni Giornaliere</h5>
+                    </div>
+                    <div class="p-4">
+                        <div class="space-y-3">
+                            <!-- Assignment 1 -->
+                            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-3 h-3 bg-blue-500 rounded-full"></div>
+                                    <div>
+                                        <div class="font-medium text-gray-800">Via Roma 45, Milano → Fiat Ducato (AB123CD) → Marco Rossi</div>
+                                        <div class="text-sm text-gray-600">08:00-17:00 | Cliente: Iper SpA | Impianto refrigerazione</div>
+                                    </div>
+                                </div>
+                                <div class="flex space-x-2">
+                                    <span class="px-2 py-1 bg-green-100 text-green-800 text-xs rounded">Confermato</span>
+                                    <button class="text-blue-600 hover:text-blue-800">
+                                        <span class="material-icons-outlined text-sm">edit</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Assignment 2 -->
+                            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                                    <div>
+                                        <div class="font-medium text-gray-800">Via Verdi 12, Bergamo → Iveco Daily (CD456EF) → Andrea Ferrari</div>
+                                        <div class="text-sm text-gray-600">08:30-16:30 | Cliente: SuperMart | Manutenzione sistemi</div>
+                                    </div>
+                                </div>
+                                <div class="flex space-x-2">
+                                    <span class="px-2 py-1 bg-green-100 text-green-800 text-xs rounded">Confermato</span>
+                                    <button class="text-blue-600 hover:text-blue-800">
+                                        <span class="material-icons-outlined text-sm">edit</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Assignment 3 -->
+                            <div class="flex items-center justify-between p-4 bg-yellow-50 rounded-lg border border-yellow-200">
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                                    <div>
+                                        <div class="font-medium text-gray-800">Via Manzoni 8, Como → Ford Transit (GH789IJ) → Luca Conti</div>
+                                        <div class="text-sm text-gray-600">09:00-18:00 | Cliente: RetailMax | Installazione scaffalature</div>
+                                    </div>
+                                </div>
+                                <div class="flex space-x-2">
+                                    <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">In Attesa</span>
+                                    <button class="text-blue-600 hover:text-blue-800">
+                                        <span class="material-icons-outlined text-sm">edit</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feature Highlights -->
+    <div class="grid grid-cols-3 gap-6 mt-8">
+        <div class="bg-white rounded-lg shadow p-4">
+            <div class="flex items-center space-x-2 mb-4">
+                <span class="material-icons-outlined text-[#FCD415]">smartphone</span>
+                <h4 class="font-medium text-gray-900">App Mobile Intuitiva</h4>
+            </div>
+            <p class="text-sm text-gray-600">
+                Interfaccia mobile ottimizzata per tecnici con timbrature GPS e QR Code scanner integrato.
+            </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow p-4">
+            <div class="flex items-center space-x-2 mb-4">
+                <span class="material-icons-outlined text-[#FCD415]">sync</span>
+                <h4 class="font-medium text-gray-900">Integrazione Webfleet</h4>
+            </div>
+            <p class="text-sm text-gray-600">
+                Sincronizzazione automatica con tracking automezzi per correlazione timbrature-spostamenti.
+            </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow p-4">
+            <div class="flex items-center space-x-2 mb-4">
+                <span class="material-icons-outlined text-[#FCD415]">analytics</span>
+                <h4 class="font-medium text-gray-900">Dashboard HR Avanzata</h4>
+            </div>
+            <p class="text-sm text-gray-600">
+                Controllo centralizzato timbrature con rilevamento automatico discrepanze e workflow approvazione.
+            </p>
+        </div>
+    </div>
+
+    <!-- QR Code Demo -->
+    <div class="bg-white rounded-xl shadow-md p-6 mt-8">
+        <h3 class="text-lg font-semibold text-gray-800 mb-6">Sistema QR Code per Automezzi</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="space-y-4">
+                <h4 class="font-medium text-gray-800">Come Funziona:</h4>
+                <div class="space-y-3">
+                    <div class="flex items-start">
+                        <span class="w-6 h-6 bg-brand rounded-full flex items-center justify-center text-gray-900 text-sm font-medium mr-3 mt-0.5">1</span>
+                        <div>
+                            <p class="text-sm text-gray-700 font-medium">Generazione QR Code</p>
+                            <p class="text-xs text-gray-600">Ogni automezzo riceve un QR Code univoco collegato a Webfleet</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="w-6 h-6 bg-brand rounded-full flex items-center justify-center text-gray-900 text-sm font-medium mr-3 mt-0.5">2</span>
+                        <div>
+                            <p class="text-sm text-gray-700 font-medium">Scansione Tecnico</p>
+                            <p class="text-xs text-gray-600">Il tecnico scansiona il QR Code dal proprio smartphone</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="w-6 h-6 bg-brand rounded-full flex items-center justify-center text-gray-900 text-sm font-medium mr-3 mt-0.5">3</span>
+                        <div>
+                            <p class="text-sm text-gray-700 font-medium">Associazione Automatica</p>
+                            <p class="text-xs text-gray-600">Sistema associa automaticamente tecnico-automezzo per la giornata</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center items-center">
+                <div class="bg-gray-800 p-6 rounded-lg text-center">
+                    <div class="bg-white p-4 rounded-lg mb-4 inline-block">
+                        <!-- QR Code Placeholder -->
+                        <div class="w-32 h-32 bg-black rounded-lg flex items-center justify-center">
+                            <div class="grid grid-cols-8 gap-1">
+                                <div class="w-2 h-2 bg-white"></div>
+                                <div class="w-2 h-2 bg-white"></div>
+                                <div class="w-2 h-2 bg-white"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2 bg-white"></div>
+                                <div class="w-2 h-2 bg-white"></div>
+                                <div class="w-2 h-2 bg-white"></div>
+                                <div class="w-2 h-2 bg-white"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2 bg-white"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2 bg-white"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2 bg-white"></div>
+                                <div class="w-2 h-2 bg-white"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2 bg-white"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2 bg-white"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2 bg-white"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2 bg-white"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2 bg-white"></div>
+                                <div class="w-2 h-2 bg-white"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2 bg-white"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2 bg-white"></div>
+                                <div class="w-2 h-2 bg-white"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2 bg-white"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2 bg-white"></div>
+                                <div class="w-2 h-2 bg-white"></div>
+                                <div class="w-2 h-2 bg-white"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2 bg-white"></div>
+                                <div class="w-2 h-2 bg-white"></div>
+                                <div class="w-2 h-2 bg-white"></div>
+                                <div class="w-2 h-2 bg-white"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2 bg-white"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2 bg-white"></div>
+                                <div class="w-2 h-2"></div>
+                                <div class="w-2 h-2 bg-white"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-white">
+                        <div class="font-medium">Fiat Ducato</div>
+                        <div class="text-sm opacity-75">AB123CD</div>
+                        <div class="text-xs opacity-50 mt-2">Webfleet ID: WF001</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Step 2 Advanced Features Preview -->
+    <div class="bg-white rounded-xl shadow-md p-6 mt-8">
+        <h3 class="text-lg font-semibold text-gray-800 mb-6">Anteprima Step 2 - Funzionalità Avanzate</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="space-y-4">
+                <div class="p-4 bg-purple-50 rounded-lg border border-purple-200">
+                    <h4 class="font-medium text-purple-800 mb-2 flex items-center">
+                        <span class="material-icons-outlined text-purple-700 mr-2">notifications_active</span>
+                        Notifiche Push Intelligenti
+                    </h4>
+                    <ul class="space-y-1 text-sm text-purple-700">
+                        <li>• Reminder timbrature</li>
+                        <li>• Aggiornamenti pianificazione in tempo reale</li>
+                        <li>• Alert discrepanze e anomalie</li>
+                        <li>• Comunicazioni dirette da ufficio</li>
+                    </ul>
+                </div>
+                
+                <div class="p-4 bg-indigo-50 rounded-lg border border-indigo-200">
+                    <h4 class="font-medium text-indigo-800 mb-2 flex items-center">
+                        <span class="material-icons-outlined text-indigo-700 mr-2">auto_awesome</span>
+                        Timbrature Automatiche
+                    </h4>
+                    <ul class="space-y-1 text-sm text-indigo-700">
+                        <li>• Geofencing con API Webfleet</li>
+                        <li>• Check-in/out automatici per perimetro</li>
+                        <li>• Modalità semi-automatica con conferma</li>
+                        <li>• Fallback manuale per casi speciali</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="p-4 bg-emerald-50 rounded-lg border border-emerald-200">
+                    <h4 class="font-medium text-emerald-800 mb-2 flex items-center">
+                        <span class="material-icons-outlined text-emerald-700 mr-2">description</span>
+                        Pianificazione PDF Automatica
+                    </h4>
+                    <ul class="space-y-1 text-sm text-emerald-700">
+                        <li>• Generazione PDF pianificazione giornaliera</li>
+                        <li>• Invio via email/push</li>
+                        <li>• Template personalizzabili</li>
+                        <li>• Storico pianificazioni accessibile</li>
+                    </ul>
+                </div>
+                
+                <div class="p-4 bg-rose-50 rounded-lg border border-rose-200">
+                    <h4 class="font-medium text-rose-800 mb-2 flex items-center">
+                        <span class="material-icons-outlined text-rose-700 mr-2">assessment</span>
+                        Reporting Avanzato
+                    </h4>
+                    <ul class="space-y-1 text-sm text-rose-700">
+                        <li>• Report ore lavorate dettagliati per cantiere</li>
+                        <li>• Report ore spostamenti</li>
+                        <li>• Storico cantieri</li>
+                        <li>• Statistiche produttività tecnici e team</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
